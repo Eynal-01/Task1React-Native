@@ -13,6 +13,8 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 import Card from "@/components/Card/Card";
 import Header from "@/components/Header";
 import { styles } from "@/components/Style";
+import Header2 from "@/components/Header2";
+import Card2 from "@/components/Card/Card2";
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
@@ -34,7 +36,8 @@ export default function RootLayout() {
 
   return (
     <View>
-      <Header />
+      {/* Task1 */}
+      {/* <Header />
       <View style={styles.cardContainer}>
         <Card />
         <Card />
@@ -48,7 +51,21 @@ export default function RootLayout() {
         <View style={styles.icon2}/>
         <View style={styles.icon3}/>
         <View style={styles.icon4}/>
+      </View> */}
+
+
+      {/*Task2*/}
+      <View>
+        <Header2></Header2>  
+        <Card2></Card2>
+        <View style={styles.footer2}>
+        <View style={styles.icon}/>
+        <View style={styles.icon1}/>
+        <View style={styles.icon2}/>
+        <View style={styles.icon3}/>
+        <View style={styles.icon4}/>
       </View>
+      </View> 
     </View>
   );
 }
